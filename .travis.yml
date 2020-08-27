@@ -1,0 +1,21 @@
+sudo: required
+services:
+  - docker
+
+script:
+# - docker build -t <dockeruser/nameofproject> .
+# - docker images <dockeruser/nameofproject>
+  - docker build -t <vdefrancesco/simplebackend .
+  - docker images dockeruser/simplebackend
+
+before_deploy:
+# - docker login -u <username>  -p <userpassword>
+  - docker login -u vdefrancesco  -p vitoronzo
+
+
+deploy:
+  provider: script
+# script: docker push <dockeruser/nameofproject>
+  script: docker push vdefrancesco/simplebackend
+  on:
+    branch: master
