@@ -5,7 +5,7 @@ services:
 script:
 # - docker build -t <dockeruser/nameofproject> .
 # - docker images <dockeruser/nameofproject>
-  - docker build -t <vdefrancesco/simplebackend .
+  - docker build -t vdefrancesco/simplebackend .
   - docker images dockeruser/simplebackend
 
 before_deploy:

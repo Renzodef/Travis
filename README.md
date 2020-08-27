@@ -1,7 +1,9 @@
 ## PREREQUISITES
-1) Register at: https://hub.docker.com/
-2) Register at: https://github.com/
-3) Connect Github with Travis at: https://travis-ci.org/
+- Register at: https://hub.docker.com/
+- Register at: https://github.com/
+- Connect Github with Travis by signing in sat: https://travis-ci.org/
+- Publish the Github repository
 
-## EDIT THE FILE
-
+## TRIGGER THE BUILD
+- Go in Travis website in the section settings and enable your new Github repository
+- Go in the Travis dashboard and trigger the build
